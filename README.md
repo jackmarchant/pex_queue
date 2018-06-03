@@ -1,4 +1,4 @@
-# PriorityQueue
+# PexQueue
 
 A Queue that uses the First In, First Out (FIFO) method, 
 unless provided with a function to prioritise items.
@@ -16,5 +16,5 @@ def deps do
 end
 ```
 
-See documentation on [PriorityQueue HexDocs](https://hexdocs.pm/priority_queue)
+See documentation on [PexQueue HexDocs](https://hexdocs.pm/priority_queue)
 

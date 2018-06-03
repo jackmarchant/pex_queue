@@ -1,4 +1,4 @@
-defmodule PriorityQueue do
+defmodule PexQueue do
   @moduledoc """
   A Queue that uses the First In, First Out (FIFO) method,
   unless provided with a function to prioritise items.
@@ -8,16 +8,16 @@ defmodule PriorityQueue do
   For example, we have this queue:
 
   ```elixir
-  {:ok, pid} = PriorityQueue.start_link(fn first, second -> first < second end)
-  PriorityQueue.enqueue(pid, 2)
-  PriorityQueue.enqueue(pid, 7)
-  PriorityQueue.enqueue(pid, 5)
+  {:ok, pid} = PexQueue.start_link(fn first, second -> first < second end)
+  PexQueue.enqueue(pid, 2)
+  PexQueue.enqueue(pid, 7)
+  PexQueue.enqueue(pid, 5)
   ```
   **Queue state:** `[7, 5, 2]`
 
   When we add 6 to the queue, it results in:
   ```elixir
-  PriorityQueue.enqueue(pid, 6)
+  PexQueue.enqueue(pid, 6)
   ```
   **Queue state:** `[7, 6, 5, 2]`
 
@@ -25,16 +25,16 @@ defmodule PriorityQueue do
   which would return items in the order they were added.
 
   ```elixir
-  {:ok, pid} = PriorityQueue.start_link(fn first, second -> first < second end)
-  PriorityQueue.enqueue(pid, 2)
-  PriorityQueue.enqueue(pid, 7)
-  PriorityQueue.enqueue(pid, 5)
+  {:ok, pid} = PexQueue.start_link(fn first, second -> first < second end)
+  PexQueue.enqueue(pid, 2)
+  PexQueue.enqueue(pid, 7)
+  PexQueue.enqueue(pid, 5)
 
   # Queue state: [2, 5, 7]
 
-  PriorityQueue.dequeue(pid) # 2
-  PriorityQueue.dequeue(pid) # 5
-  PriorityQueue.dequeue(pid) # 7
+  PexQueue.dequeue(pid) # 2
+  PexQueue.dequeue(pid) # 5
+  PexQueue.dequeue(pid) # 7
 
   ```
   """

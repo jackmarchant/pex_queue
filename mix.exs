@@ -1,18 +1,18 @@
-defmodule PriorityQueue.MixProject do
+defmodule PexQueue.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :priority_queue,
+      app: :pex_queue,
       version: "0.1.0",
       elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "A simple FIFO Queue, with optional prioritisation",
       package: package(),
-      name: "PriorityQueue",
-      source_url: "https://github.com/jackmarchant/priority_queue",
-      docs: [main: "PriorityQueue", extras: ["README.md"]],
+      name: "PexQueue",
+      source_url: "https://github.com/jackmarchant/pex_queue",
+      docs: [main: "PexQueue", extras: ["README.md"]],
     ]
   end
 
@@ -34,7 +34,7 @@ defmodule PriorityQueue.MixProject do
     [
       maintainers: ["Jack Marchant"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/jackmarchant/priority_queue"}
+      links: %{"GitHub" => "https://github.com/jackmarchant/pex_queue"}
     ]
   end
 end
