@@ -1,6 +1,7 @@
 # PriorityQueue
 
-**TODO: Add description**
+A Queue that uses the First In, First Out (FIFO) method, 
+unless provided with a function to prioritise items.
 
 ## Installation
 
@@ -15,7 +16,5 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/priority_queue](https://hexdocs.pm/priority_queue).
+See documentation on [PriorityQueue HexDocs](https://hexdocs.pm/priority_queue)
 
