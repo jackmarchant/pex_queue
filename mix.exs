@@ -10,6 +10,9 @@ defmodule PriorityQueue.MixProject do
       deps: deps(),
       description: "A simple FIFO Queue, with optional prioritisation",
       package: package(),
+      name: "PriorityQueue",
+      source_url: "https://github.com/jackmarchant/priority_queue",
+      docs: [main: "PriorityQueue", extras: ["README.md"]],
     ]
   end
 
@@ -23,6 +26,7 @@ defmodule PriorityQueue.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, "~> 0.16", only: :dev, runtime: false},
     ]
   end
 
