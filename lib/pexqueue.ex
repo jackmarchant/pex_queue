@@ -25,7 +25,7 @@ defmodule PexQueue do
   which would return items in the order they were added.
 
   ```elixir
-  {:ok, pid} = PexQueue.start_link(fn first, second -> first < second end)
+  {:ok, pid} = PexQueue.start_link()
   PexQueue.enqueue(pid, 2)
   PexQueue.enqueue(pid, 7)
   PexQueue.enqueue(pid, 5)

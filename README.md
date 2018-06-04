@@ -6,15 +6,16 @@ unless provided with a function to prioritise items.
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `priority_queue` to your list of dependencies in `mix.exs`:
+by adding `pex_queue` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:priority_queue, "~> 0.1.0"}
+    {:pex_queue, "~> 0.1.0"}
   ]
 end
 ```
 
-See documentation on [PexQueue HexDocs](https://hexdocs.pm/priority_queue)
+## Documentation
+See documentation on [PexQueue HexDocs](https://hexdocs.pm/pex_queue)
 
